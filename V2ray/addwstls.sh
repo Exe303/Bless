@@ -38,9 +38,9 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/mifacell",
+      "path": "/servlets/mms",
       "type": "none",
-      "host": "${domain}",
+      "host": "mmc.xl.net.id",
       "tls": "tls"
 }
 EOF
@@ -61,7 +61,7 @@ echo -e "id             : ${uuid}"
 echo -e "alterId        : 0"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path           : /mifacell"
+echo -e "path           : /servlets/mms"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
