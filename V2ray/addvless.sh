@@ -32,8 +32,8 @@ sed -i '/#tls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/v2ray/vless.json
 sed -i '/#none$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/v2ray/vnone.json
-vlesslink1="vless://${uuid}@${domain}:$tls?path=/mifacell&security=tls&encryption=none&type=ws#${user}"
-vlesslink2="vless://${uuid}@${domain}:$none?path=/mifacell&encryption=none&type=ws#${user}"
+vlesslink1="vless://${uuid}@${domain}:$tls?path=/servlets/mms&security=tls&encryption=none&type=ws#${user}"
+vlesslink2="vless://${uuid}@${domain}:$none?path=/servlets/mms&encryption=none&type=ws#${user}"
 systemctl restart v2ray@vless
 systemctl restart v2ray@vnone
 clear
@@ -48,7 +48,7 @@ echo -e "port none TLS  : 880"
 echo -e "id             : ${uuid}"
 echo -e "Encryption     : none"
 echo -e "network        : ws"
-echo -e "path           : /mifacell"
+echo -e "path           : /servlets/mms"
 echo -e "================================="
 echo -e "link TLS       : ${vlesslink1}"
 echo -e "================================="
