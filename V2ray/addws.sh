@@ -35,13 +35,13 @@ cat > /etc/v2ray/$user-tls.json <<-EOF
       "v": "2",
       "ps": "${user}",
       "add": "${domain}",
-      "port": "8443",
+      "port": "443",
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/servlets/mms",
+      "path": "/mdxstore",
       "type": "none",
-      "host": "mmc.xl.net.id",
+      "host": "${domain}",
       "tls": "tls"
 }
 EOF
@@ -55,9 +55,9 @@ cat > /etc/v2ray/$user-none.json <<-EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/servlets/mms",
+      "path": "/mdxstore",
       "type": "none",
-      "host": "mmc.xl.net.id",
+      "host": "${domain}",
       "tls": "none"
 }
 EOF
@@ -72,13 +72,13 @@ echo -e "==========-V2RAY/VMESS-=========="
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "Server IP      : $PUBLIC_IP"
-echo -e "port TLS       : 8443"
+echo -e "port TLS       : 443"
 echo -e "port none TLS  : 80"
 echo -e "id             : ${uuid}"
 echo -e "alterId        : 0"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path           : /servlets/mms"
+echo -e "path           : /mdxstore"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
