@@ -293,7 +293,7 @@ cat > /etc/v2ray/vless.json <<-EOF
           ]
         },
         "wsSettings": {
-          "path": "/servlets/mms",
+          "path": "/mdxstore",
           "headers": {
             "Host": ""
           }
@@ -381,7 +381,7 @@ cat > /etc/v2ray/vnone.json <<-EOF
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/servlets/mms",
+          "path": "/mdxstore",
           "headers": {
             "Host": ""
           }
