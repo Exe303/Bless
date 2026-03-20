@@ -41,7 +41,7 @@ cat > /etc/v2ray/$user-tls.json <<-EOF
       "net": "ws",
       "path": "/servlets/mms",
       "type": "none",
-      "host": "${domain}",
+      "host": "mmc.xl.net.id",
       "tls": "tls"
 }
 EOF
@@ -57,7 +57,7 @@ cat > /etc/v2ray/$user-none.json <<-EOF
       "net": "ws",
       "path": "/servlets/mms",
       "type": "none",
-      "host": "${domain}",
+      "host": "mmc.xl.net.id",
       "tls": "none"
 }
 EOF
